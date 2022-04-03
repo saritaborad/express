@@ -105,7 +105,7 @@ studentArr = studentsData.filter((n1) => n1.course === name1);
 res.send(studentArr);
 });
 
-Excercise:
+Excercise: 1
 
 Create a server that serves REST APIs
 Base URL http://localhost:2410
@@ -120,6 +120,50 @@ Base URL http://localhost:2410
 8. GET /svr/students?course=React&grade=A
 9. GET /svr/students?course=React,Node&grade=B
 10. GET /svr/students?sort=name
-10. GET /svr/students?sort=course
-10. GET /svr/students?course=React&sort=name
-10. GET /svr/students?course=React,node&grade=A&sort=course
+11. GET /svr/students?sort=course
+12. GET /svr/students?course=React&sort=name
+13. GET /svr/students?course=React,node&grade=A&sort=course
+
+Exercise: 2
+
+Create a server that serves the REST APIs
+Base URL http://localhost:2410
+
+1. POST /svr/students
+2. PUT /svr/students/:id
+3. DELETE /svr/students/:id
+
+Getting started with MySQL
+
+- create a database testDB
+- create a table persons
+  CREATE TABLE persons (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  age INT NOT NULL
+  );
+
+Insert values into the table persons
+INSERT INTO persons(name,age) VALUES ("Jack",25);
+INSERT INTO persons(name,age) VALUES ("Mary",27);
+INSERT INTO persons(name,age) VALUES ("Roy",26);
+
+install Node.js module for mySQL
+
+- npm install mysql
+
+Note: calls to the database are asynchronous.
+Exercise:
+
+From the table persons
+
+- Display the details of all the person
+- Display the details of the person whose name is specified
+- Insert the details of new person
+- Insert the details of the new persons
+- Update the age of the specified person
+
+Reset the data in the table persons by
+
+- Deleting all rows of the table
+- And then inserting the details of persons

@@ -70,7 +70,7 @@ app.get("/svr/students", function (req, res) {
 
   if (sort === "course") {
     arr1.sort((st1, st2) => st1.course.localeCompare(st2.course));
-  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  }
   res.send(arr1);
 });
 
@@ -84,6 +84,12 @@ app.get("/svr/students/:id", function (req, res) {
 
 app.get("/svr/students/course/:name", function (req, res) {
   name1 = req.params.name;
+
   studentArr = studentsData.filter((n1) => n1.course === name1);
   res.send(studentArr);
+});
+
+app.post("/svr/students", function (req, res) {
+  body = req.body;
+  console.log(body);
 });

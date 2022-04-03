@@ -1,0 +1,20 @@
+let students = [
+  { id: 1, name: "Jack", course: "React", grade: "A", city: "London" },
+  { id: 2, name: "jiya", course: "Javascript", grade: "B", city: "London" },
+  { id: 3, name: "Jav", course: "node", grade: "C", city: "London" },
+  { id: 4, name: "Jk", course: "java", grade: "A", city: "London" },
+  { id: 5, name: "Jay", course: "scala", grade: "A", city: "London" },
+  { id: 6, name: "nik", course: "c++", grade: "B", city: "London" },
+  { id: 7, name: "Jack", course: "flutter", grade: "D", city: "London" },
+  { id: 8, name: "Jack", course: "React", grade: "D", city: "London" },
+];
+
+let persons = [
+  { name: "Jiya", age: "12" },
+  { name: "Tiya", age: "22" },
+  { name: "Siya", age: "32" },
+  { name: "Riya", age: "42" },
+];
+
+module.exports.studentsData = students;
+module.exports.persons = persons;
