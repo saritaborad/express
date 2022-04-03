@@ -70,7 +70,7 @@ app.get("/svr/students", function (req, res) {
 
   if (sort === "course") {
     arr1.sort((st1, st2) => st1.course.localeCompare(st2.course));
-  }
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
   res.send(arr1);
 });
 

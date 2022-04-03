@@ -119,3 +119,7 @@ Base URL http://localhost:2410
 7. GET /svr/students?grade=A
 8. GET /svr/students?course=React&grade=A
 9. GET /svr/students?course=React,Node&grade=B
+10. GET /svr/students?sort=name
+10. GET /svr/students?sort=course
+10. GET /svr/students?course=React&sort=name
+10. GET /svr/students?course=React,node&grade=A&sort=course
